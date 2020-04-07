@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Guessing Game
+        </title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/459f34aff4.js" crossorigin="anonymous"></script>
+       
+    </head>
+    <body class="row " onload="newGame()">
+        <div class="rounded-lg col-md-4 mx-auto p-5 mt-5" style="background-color:lightcyan;">    
+            <h5>
+                Guess a number between 1 and 100 <br> and use Hint for free help
+            </h5>
+            <input type="number" class="form-control" id="inputTxt" >
+            <br><br>
+            <div class="d-flex justify-content-between">
+                <button class="p-3 m-2 btn btn-success" onclick="guess()">
+                    Guess
+                </button>
+                <button class="p-3 m-2 btn btn-danger" onclick="giveUp()">
+                    Give Up
+                </button>
+            </div>
+            <br><br>
+            <div class="d-flex">
+                <button class="p-2 m-2 btn btn-primary" disabled>
+                    Hint
+                </button>
+                <input type="text" class="p-2 m-2 form-control" disabled id="hintTxt">
+            </div>
+            <div class="d-flex">
+                <button disabled class="p-2 m-2 btn btn-primary">
+                    Tries
+                </button>
+                <input type="text" class="p-2 m-2 form-control" disabled id="triesTxt" >
+            </div>
+
+        </div>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>
